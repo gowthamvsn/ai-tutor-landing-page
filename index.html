@@ -1,121 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Tutor App - Master Chemistry & Math with Prof. Clara</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Prof. Clara – AI Tutor Team for STEM</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <nav>
-            <div class="logo">AI Tutor App</div>
-            <ul class="nav-links">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#how-it-works">How It Works</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#cta">Get Started</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Unlock Chemistry & Math Mastery with Prof. Clara</h1>
-            <p>Your AI tutor that turns complex concepts into blockbuster lessons – for US high school & undergrad students.</p>
-            <!-- <a href="#cta" class="btn">Download Now</a> -->
-        </div>
-        <img src="./Prof.Clara.jpg" alt="Prof. Clara Avatar" class="avatar">
-    </section>
+    
 
-    <!-- Features Section -->
-    <section id="features">
-        <h2>Why Choose AI Tutor?</h2>
-        <div class="feature-grid">
-            <div class="feature">
-                <img src="./chemistry.jpg" alt="Chemistry Visual">
-                <h3>Visual Learning</h3>
-                <p>Images and diagrams appear as Prof. Clara explains – no more boring textbooks!</p>
-            </div>
-            <div class="feature">
-                <img src="./math.jpg" alt="Math Visual">
-                <h3>Personalized for Grades 11 to Undergrad</h3>
-                <p>Aligned with US curricula: AP Chem, Calculus, and more.</p>
-            </div>
-            <div class="feature">
-                <img src="./moneyball.png" alt="Movie Reference">
-                <h3>Movie Magic References</h3>
-                <p>Learn Statistics via "MoneyBall" or reactions like in "Breaking Bad".</p>
-            </div>
-            
-
-        </div>
-    </section>
-
-    <!-- How It Works -->
-    <section id="how-it-works">
-        <h2>How It Works</h2>
-        <p>Prof. Clara appears as your guide. Ask a question, and watch the magic:</p>
-        <ol>
-            <li>Avatar explains in simple terms.</li>
-            <li>Screen shows relevant images/movies clips references.</li>
-            <!-- <li>Avatar moves to top-right for focus on visuals.</li> -->
-            <li>Get quizzes and feedback for mastery.</li>
-        </ol>
-        <!-- Video Demo -->
-        <div class="video-container">
-            <video controls poster="./chemistry2.jpg">
-                <source src="./short demo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <p class="video-caption">Watch Prof. Clara teach Equilibrium using see-saw in 15 seconds!</p>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section id="testimonials">
-        <h2>What Students Say</h2>
-        <div class="testimonial-grid">
-            <div class="testimonial">
-                <p>"Finally understood organic chem – thanks to movie analogies!"</p>
-                <cite>- Alex, 12th Grader, California</cite>
-            </div>
-            <div class="testimonial">
-                <p>"Boosted my GPA by 20%. Prof. Clara is my Jack in the Titanic!"</p>
-                <cite>- Sarah, Undergrad, NYU</cite>
+<!-- HERO: SUPER CREATIVE, BIG, ANIMATED, FLIPPING AVATARS -->
+<section id="hero" class="hero">
+    <div class="hero-bg"></div>
+    
+    <!-- FLOATING AVATARS (BIG + FLIP + BUBBLES) -->
+    <div class="avatar-container left">
+        <div class="avatar-card flip-card">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <img src="Prof.clara.jpg" alt="Prof. Clara">
+                </div>
+                <div class="flip-back">
+                    <h4>Prof. Clara</h4>
+                    <p>Lead AI Tutor</p>
+                    <span class="bubble">Hi! Ask me anything</span>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- CTA -->
-    <section id="cta">
-        <h2>Ready to Level Up Your Learning?</h2>
-        <p>Download the app today and start your free trial.</p>
-        <a href="https://your-app-link.com" class="btn">Get the App</a>
-    </section>
+    <div class="avatar-container right">
+        <div class="avatar-card flip-card">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <img src="random formula.jpg" alt="AI Math Tutor">
+                </div>
+                <div class="flip-back">
+                    <h4>AI Math Mentor</h4>
+                    <p>Calculus & Stats</p>
+                    <span class="bubble">Let’s solve it!</span>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 AI Tutor App. All rights reserved.</p>
-    </footer>
+    <!-- HERO CONTENT -->
+    <div class="container hero-content">
+        <h1>Personalized <span class="gradient-text">AI Tutor</span> for STEM</h1>
+        <p class="hero-subtitle">Loved by <strong>UNT faculty and students</strong>. Aligned with <strong>Undergrad curricula</strong>.</p>
+        
+        <div class="ai-roles">
+            <span>AI Chemistry Tutor</span>
+            <span>AI Math Mentor</span>
+            <span>AI Quiz Master</span>
+            <span>AI Exam Coach</span>
+        </div>
 
-    <script src="script.js"></script>
+        <a href="#cta" class="btn-primary pulse">Book Free Pilot Demo</a>
+    </div>
+
+    <!-- FLOATING BUBBLES (EXTRA MAGIC) -->
+    <div class="floating-bubble b1"></div>
+    <div class="floating-bubble b2"></div>
+    <div class="floating-bubble b3"></div>
+</section>
+
+
+
+<!-- PROBLEM: STEM CRISIS – CLEAN, FULL-VIEW CARDS -->
+<section id="problem" class="section">
+    <div class="container">
+        <h2 class="section-title">The STEM Crisis Is <span class="highlight">Real</span></h2>
+        <div class="crisis-grid">
+            <!-- CARD 1 -->
+            <div class="crisis-card" data-aos="fade-up">
+                <div class="card-inner">
+                    <img src="newscoresfalling1.jpg" alt="NPR Report Card">
+                </div>
+                <div class="card-content">
+                    <h3>32% STEM dropout in Year 1</h3>
+                    <p>Source: NSF, 2024</p>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="crisis-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-inner">
+                    <img src="newsmathdown.jpg" alt="GMA Sobering Scores">
+                </div>
+                <div class="card-content">
+                    <h3>U.S. math scores plummeting</h3>
+                    <p>Behind Asia & Europe</p>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="crisis-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-inner">
+                    <img src="newsdown1.jpg" alt="TIMSS Decline">
+                </div>
+                <div class="card-content">
+                    <h3>Falling behind Asia & Europe</h3>
+                    <p>International Math & Science Study</p>
+                </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="crisis-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="card-inner">
+                    <img src="newsmathdown2.jpg" alt="Milwaukee Independent">
+                </div>
+                <div class="card-content">
+                    <h3>Zero improvement in 4 years</h3>
+                    <p>National exams show no progress</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SOLUTION: AI ROLES (SULLY-STYLE HOVER FLIP) -->
+<section id="solution" class="section bg-gradient">
+    <div class="container">
+        <h2 class="section-title">Meet Your <span class="gradient-text">AI Tutor Team</span></h2>
+        <div class="roles-grid">
+            <div class="role-card flip-card" data-role="chemistry">
+                <div class="flip-inner">
+                    <div class="flip-front">
+                        <img src="chemistry.jpg" alt="Chemistry">
+                        <h3>AI Chemistry Tutor</h3>
+                    </div>
+                    <div class="flip-back">
+                        <h4>Movie Analogies + 3D Models</h4>
+                        <p>Turns reactions into blockbuster scenes.</p>
+                        <a href="#demo" class="explore-btn">Watch Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="role-card flip-card" data-role="math">
+                <div class="flip-inner">
+                    <div class="flip-front">
+                        <img src="math.jpg" alt="Math">
+                        <h3>AI Math Mentor</h3>
+                    </div>
+                    <div class="flip-back">
+                        <h4>Step-by-Step + Adaptive Path</h4>
+                        <p>Personalized calculus & stats mastery.</p>
+                        <a href="#demo" class="explore-btn">Try It</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="role-card flip-card" data-role="quiz">
+                <div class="flip-inner">
+                    <div class="flip-front">
+                        <img src="moneyball.png" alt="Quiz">
+                        <h3>AI Quiz Master</h3>
+                    </div>
+                    <div class="flip-back">
+                        <h4>Instant Feedback + Gamification</h4>
+                        <p>Boosts retention by 40%.</p>
+                        <a href="#results" class="explore-btn">See Results</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- HOW IT WORKS: SULLY-STYLE NUMBERED FLOW -->
+<section id="how-it-works" class="section">
+    <div class="container">
+        <h2 class="section-title">How It <span class="highlight">Works</span></h2>
+        <div class="flow">
+            <div class="flow-item">
+                <div class="flow-number">01</div>
+                <h3>Student Asks</h3>
+                <p>Natural language: “Explain equilibrium like a movie.”</p>
+            </div>
+            <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="flow-item">
+                <div class="flow-number">02</div>
+                <h3>Prof. Clara Responds</h3>
+                <p>3D see-saw + Jurassic Park analogy.</p>
+            </div>
+            <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="flow-item">
+                <div class="flow-number">03</div>
+                <h3>Instant Quiz</h3>
+                <p>Adaptive quiz → 95% mastery.</p>
+            </div>
+        </div>
+        <video controls class="demo-video" poster="chemistry2.jpg">
+            <source src="shortdemo.mp4" type="video/mp4">
+        </video>
+    </div>
+</section>
+
+<!-- FEATURES: TRUSTED BY INSTITUTIONS – EXACT SAME AS STEM CRISIS -->
+<section id="features" class="section bg-dark">
+    <div class="container">
+        <h2 class="section-title">Trusted by <span class="gradient-text">Faculty</span></h2>
+        
+        <div class="crisis-grid"> <!-- SAME GRID CLASS -->
+            <!-- CARD 1 -->
+            <div class="crisis-card" data-aos="fade-up">
+                <div class="card-inner">
+                    <img src="newsAIhelps2.jpg" alt="Teacher + AI Partnership">
+                </div>
+                <div class="card-content">
+                    <h3>Teacher + AI Partnership</h3>
+                    <p>Ready to evolve students to next level</p>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="crisis-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-inner">
+                    <img src="newsAIhelps3.jpg" alt="Scalable to 1000s">
+                </div>
+                <div class="card-content">
+                    <h3>Scalable to 1000s</h3>
+                    <p>Tested for Calculus and organic chemistry</p>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="crisis-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-inner">
+                    <img src="newsAIhelps4.jpg" alt="Free Trial Impact">
+                </div>
+                <div class="card-content">
+                    <h3>Free Trial Impact</h3>
+                    <p>Students catch up in 2 weeks.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- RESULTS: WORKING COUNTERS + GLOW -->
+<section id="results" class="section bg-gradient">
+    <div class="container">
+        <h2 class="section-title">Proven <span class="highlight">Results</span></h2>
+        
+        <div class="results-grid">
+            <div class="result-card">
+                <div class="result-number">
+                    <span class="counter" data-target="25" data-suffix="%">0</span>
+                </div>
+                <p>AP Chemistry Pass %</p>
+            </div>
+            <div class="result-card">
+                <div class="result-number negative">
+                    <span class="counter" data-target="16" data-suffix="%">0</span>
+                </div>
+                <p>Undergrad Attrition % down by</p>
+            </div>
+            <div class="result-card">
+                <div class="result-number">
+                    <span class="counter" data-target="95" data-suffix="%">0</span>
+                </div>
+                <p>Student Satisfaction %</p>
+            </div>
+            <div class="result-card">
+                <div class="result-number">
+                    <span class="counter" data-target="40" data-suffix=" hrs">0</span>
+                </div>
+                <p>Teacher hours Saved</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CASE STUDY -->
+<section id="case-study" class="section">
+    <div class="container">
+        <div class="case-grid">
+            <div class="case-quote">
+                <blockquote>“Game-changer doesn’t even begin to describe it.”</blockquote>
+                <cite>— Dr. Robert, Ph.D candidate at UNT</cite>
+            </div>
+            <img src="movie-ref.jpg" alt="Case Study" class="case-img">
+        </div>
+    </div>
+</section>
+
+<!-- CTA: URGENCY + CALENDLY -->
+<section id="cta" class="section cta">
+    <div class="container">
+        <h2>Ready to <span class="gradient-text">Transform STEM?</span></h2>
+        <p class="countdown">Only <strong>3 pilot spots</strong> left this month.</p>
+        <div id="calendly-inline-widget" style="min-width:320px;height:700px;"></div>
+        <!-- <script src="https://assets.calendly.com/assets/external/widget.js" async></script> -->
+        <script>
+            Calendly.initInlineWidget({
+                url: 'https://calendly.com/yourname/15min',
+                parentElement: document.getElementById('calendly-inline-widget')
+            });
+        </script>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <p>© 2025 Prof. Clara AI • <a href="#">Privacy</a> • <a href="#">Terms</a></p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
