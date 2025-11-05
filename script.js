@@ -1,45 +1,37 @@
+// CALENDLY – AUTO LOAD
+document.addEventListener('DOMContentLoaded', () => {
+    const widget = document.querySelector('.calendly-inline-widget');
+    if (widget) {
+        const script = document.createElement('script');
+        script.src = 'https://assets.calendly.com/assets/external/widget.js';
+        script.async = true;
+        document.body.appendChild(script);
+    }
+});
+
 // COUNTER ANIMATION
 const counters = document.querySelectorAll('.counter');
+const resultsSection = document.querySelector('#results');
+
 const observer = new IntersectionObserver((entries) => {
     if (entries[0].isIntersecting) {
         counters.forEach(counter => {
             const target = +counter.dataset.target;
+            const suffix = counter.dataset.suffix || '';
             let count = 0;
-            const inc = target / 100;
+            const inc = target / 80;
             const timer = setInterval(() => {
                 count += inc;
                 if (count >= target) {
-                    counter.textContent = target;
+                    counter.textContent = target + suffix;
                     clearInterval(timer);
                 } else {
-                    counter.textContent = Math.floor(count);
+                    counter.textContent = Math.floor(count) + suffix;
                 }
-            }, 20);
+            }, 25);
         });
-        observer.unobserve(entries[0].target);
+        observer.unobserve(resultsSection);
     }
-});
-observer.observe(document.querySelector('#results'));
+}, { threshold: 0.5 });
 
-// SLIDER DOTS
-const slider = document.getElementById('proofSlider');
-const dotsContainer = document.getElementById('sliderDots');
-slider.querySelectorAll('.proof-card').forEach((_, i) => {
-    const dot = document.createElement('div');
-    dot.className = 'slider-dot';
-    if (i === 0) dot.classList.add('active');
-    dot.addEventListener('click', () => {
-        slider.scrollTo({ left: slider.children[i].offsetLeft, behavior: 'smooth' });
-    });
-    dotsContainer.appendChild(dot);
-});
-slider.addEventListener('scroll', () => {
-    const dots = dotsContainer.querySelectorAll('.slider-dot');
-    let idx = 0;
-    Array.from(slider.children).forEach((card, i) => {
-        if (slider.scrollLeft >= card.offsetLeft - 50) idx = i;
-    });
-    dots.forEach((d, i) => d.classList.toggle('active', i === idx));
-});
-
-
+if (resultsSection) observer.observe(resultsSection);
