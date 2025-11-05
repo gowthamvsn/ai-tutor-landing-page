@@ -77,8 +77,8 @@ h2 { font-size: 3rem; text-align: center; margin-bottom: 60px; }
   aspect-ratio: 1 / 1;            /* always square → circle after radius */
   animation: float 7s ease-in-out infinite;
 }
-.avatar-container.left  { left: 8%;  top: 18%; }
-.avatar-container.right { right: 8%; top: 18%; }
+.avatar-container.left  { left: 3%;  top: 18%; }
+.avatar-container.right { right: 3%; top: 18%; }
 
 .avatar-card {
   position: relative;
@@ -377,3 +377,4 @@ footer a:hover { text-decoration: underline; }
 .role-card[data-role="quiz"] .flip-front img{
   object-position: 60% 50% !important;  /* adjust 50–70% to taste */
 }
+
