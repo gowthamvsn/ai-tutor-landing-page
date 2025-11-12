@@ -149,10 +149,18 @@ h2 { font-size: 3rem; text-align: center; margin-bottom: 44px; } /* tighter */
   aspect-ratio: 1 / 1;
   width: var(--size, 120px); height: auto;
 }
-.b1 { --size: 100px; top: 8%; left: 8%; animation-delay: 0s; }
-.b2 { --size: 140px; top: 65%; right: 6%; animation-delay: 3s; }
-.b3 { --size:  80px; bottom: 8%; left: 6%; animation-delay: 6s; }
-@keyframes bubbleFloat { 0%{transform:translateY(0) translateX(0) rotate(0);opacity:.3} 50%{opacity:.7} 100%{transform:translateY(-120vh) translateX(30px) rotate(360deg);opacity:0} }
+/* FLOATING DECOR BUBBLES — pushed to edges, less overlap with hero text */
+.b1 { --size: 110px; top: 10%; left: 2%;  animation-delay: 0s; }   /* far left, near top */
+.b2 { --size: 150px; top: 62%; right: 2%; animation-delay: 3s; }   /* far right, mid-bottom */
+.b3 { --size:  90px; bottom: 10%; left: 3%; animation-delay: 6s; } /* left-bottom corner */
+
+/* keep the motion but a touch gentler so they don't sweep across the headline */
+@keyframes bubbleFloat {
+  0%   { transform: translateY(0) translateX(0) rotate(0);   opacity: .30; }
+  50%  { opacity: .65; }
+  100% { transform: translateY(-90vh) translateX(24px) rotate(360deg); opacity: 0; }
+}
+
 @keyframes float { 0%,100%{ transform: translateY(0) rotate(0deg);} 50%{ transform: translateY(-30px) rotate(4deg);} }
 
 /* Buttons */
@@ -313,3 +321,4 @@ footer a:hover { text-decoration: underline; }
   .btn-primary { font-size: 1rem; padding: 12px 30px; }
   .b1 { --size: 70px; } .b2 { --size: 95px; } .b3 { --size: 60px; }
 }
+
